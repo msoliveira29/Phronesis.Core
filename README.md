@@ -1,1 +1,1 @@
-## Componente ara utilização nos projetos da Phronesis
+## Componente para utilização nos projetos da Phronesis
