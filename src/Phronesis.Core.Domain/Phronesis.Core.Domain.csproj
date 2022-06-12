@@ -1,0 +1,18 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <ItemGroup>
+    <ProjectReference Include="..\Phronesis.Core.Domain.Contract\Phronesis.Core.Domain.Contract.csproj" />
+    <ProjectReference Include="..\Phronesis.Core.Infra.CrossCutting.TypesExtension\Phronesis.Core.Infra.CrossCutting.TypesExtension.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="FluentValidation" Version="11.0.3" />
+  </ItemGroup>
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+</Project>
