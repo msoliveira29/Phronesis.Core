@@ -4,7 +4,7 @@ using Phronesis.Core.Domain.Contract.Models;
 using Phronesis.Core.Infra.CrossCutting.TypesExtension;
 using Phronesis.Core.Infra.Data.Contract;
 
-namespace Phronesis.Core.Infra.Data
+namespace Phronesis.Core.Infra.Data.Repository
 {
     /// <summary>
     /// Author...............: Marcelo Souza de Oliveira.
