@@ -35,7 +35,9 @@ namespace Phronesis.Core.Infra.Data.Mapping
         public virtual void Configure(EntityTypeBuilder<TEntity> builder)
         {
             builder.Property(x => x.CriadoEm)
-                .HasColumnName("dh_inclusao");
+                .HasColumnName("dh_inclusao")
+                .HasDefaultValueSql("getdate()")
+                .IsRequired(true);
 
             builder.Property(x => x.AtualizadoEm)
                 .HasColumnName("dh_alteracao");
