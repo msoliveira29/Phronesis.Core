@@ -4,6 +4,15 @@
     <TargetFramework>net6.0</TargetFramework>
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
+    <Authors>Marcelo Souza de Oliveira</Authors>
+    <Company>Phronesis Consultoria em TI</Company>
+    <Copyright>2022</Copyright>
+    <Description>Biblioteca de auxílio para tratamento de tipos de dados.</Description>
+    <Version>1.0.0</Version>
+    <PackageId>Phronesis.Core.Infra.CrossCutting.TypesExtension</PackageId>
+    <PackageTags>TypesExtension</PackageTags>
+    <EnableNETAnalyzers>true</EnableNETAnalyzers>
+    <EnforceCodeStyleInBuild>true</EnforceCodeStyleInBuild>
   </PropertyGroup>
 
 </Project>

@@ -9,6 +9,15 @@
     <TargetFramework>net6.0</TargetFramework>
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
+    <Authors>Marcelo Souza de Oliveira</Authors>
+    <Company>Phronesis Consultoria em TI</Company>
+    <Copyright>2022</Copyright>
+    <Description>Biblioteca que disponibiliza funções para serem utilizadas por todas as aplicações.</Description>
+    <Version>1.0.0</Version>
+    <PackageId>Phronesis.Core.Infra.CrossCutting</PackageId>
+    <PackageTags>InfraCrosssCutting</PackageTags>
+    <EnableNETAnalyzers>true</EnableNETAnalyzers>
+    <EnforceCodeStyleInBuild>true</EnforceCodeStyleInBuild>
   </PropertyGroup>
 
 </Project>
