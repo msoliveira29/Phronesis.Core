@@ -1,4 +1,4 @@
-namespace Phronesis.Morpheu.Domain.Contract.Enums
+namespace Phronesis.Core.Domain.Contract.Enums
 {
     /// <summary>
     /// Author...............: Marcelo Souza de Oliveira.

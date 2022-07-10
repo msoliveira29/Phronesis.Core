@@ -1,5 +1,5 @@
 using Phronesis.Core.Infra.CrossCutting.TypesExtension;
-using Phronesis.Morpheu.Domain.Contract.Enums;
+using Phronesis.Core.Domain.Contract.Enums;
 
 namespace Phronesis.Core.Domain.ValueObject
 {

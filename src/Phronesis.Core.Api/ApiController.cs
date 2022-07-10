@@ -1,6 +1,6 @@
 using Microsoft.AspNetCore.Mvc;
 using Phronesis.Core.Domain.ValueObject;
-using Phronesis.Morpheu.Domain.Contract.Enums;
+using Phronesis.Core.Domain.Contract.Enums;
 
 namespace Phronesis.Core.Api
 {
