@@ -1,6 +1,6 @@
 using Microsoft.EntityFrameworkCore;
 
-namespace Phronesis.Core.Infra.Data.ContextExtensions
+namespace Phronesis.Core.Infra.Data.Extensions
 {
     /// <summary>
     /// Author...............: Marcelo Souza de Oliveira.

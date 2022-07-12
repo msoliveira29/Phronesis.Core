@@ -91,7 +91,7 @@ namespace Phronesis.Core.Infra.Data.Repository
         /// <param name="includes"></param>
         /// <returns></returns>
         /// <remarks></remarks>
-        public virtual Task<TEntity[]> GetAllAsync(Expression<Func<TEntity, bool>> where, Expression<Func<TEntity, object>> orderBy, params Expression<Func<TEntity, object>>[] includes)
+        public virtual Task<TEntity[]> GetAllAsync(Expression<Func<TEntity, bool>> where, Expression<Func<TEntity, object>> orderBy, params Expression<Func<TEntity, object>>[]? includes)
         {
             var consulta = _dbSet.AsQueryable<TEntity>().Where(where);
             if (includes != null)
@@ -134,7 +134,7 @@ namespace Phronesis.Core.Infra.Data.Repository
         /// <param name="includes"></param>
         /// <returns></returns>
         /// <remarks></remarks>
-        public virtual Task<TEntity> GetSingleAsync(Expression<Func<TEntity, bool>> where, params Expression<Func<TEntity, object>>[] includes)
+        public virtual Task<TEntity> GetSingleAsync(Expression<Func<TEntity, bool>> where, params Expression<Func<TEntity, object>>[]? includes)
         {
             var consulta = _dbSet.AsQueryable<TEntity>().Where(where);
             if (includes != null)
@@ -142,7 +142,7 @@ namespace Phronesis.Core.Infra.Data.Repository
                 consulta = includes.Aggregate(consulta, (current, include) => current.Include(include));
             }
 
-            return consulta.FirstOrDefaultAsync();
+            return consulta.SingleAsync();
         }
 
         /// <summary>

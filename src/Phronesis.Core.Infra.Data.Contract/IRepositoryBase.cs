@@ -83,7 +83,7 @@ namespace Phronesis.Core.Infra.Data.Contract
         /// <param name="where">Regra de negócio</param>
         /// <param name="includes">Entidade(Tabela) para realizar Join</param>
         /// <returns>Entidade(Registro)</returns>
-        Task<TEntity> GetSingleAsync(Expression<Func<TEntity, bool>> where, params Expression<Func<TEntity, object>>[] includes);
+        Task<TEntity> GetSingleAsync(Expression<Func<TEntity, bool>> where, params Expression<Func<TEntity, object>>[]? includes);
 
         /// <summary>
         /// Restorna a Entidade(Registro) de acordo com a regra de negócios

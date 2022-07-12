@@ -57,7 +57,7 @@ namespace Phronesis.Core.Infra.CrossCutting.TypesExtension
         /// <param name="s"></param>
         /// <returns></returns>
         /// <remarks></remarks>
-        public static string GetStringOrEmpty(this string s) =>
+        public static string? GetStringOrEmpty(this string? s) =>
             GetStringOrNull(s) ?? string.Empty;
 
         /// <summary>

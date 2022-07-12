@@ -52,7 +52,7 @@ namespace Phronesis.Core.Infra.CrossCutting.TypesExtension
         /// <param name="properties"></param>
         /// <returns></returns>
         /// <remarks></remarks>
-        public static Task<HttpResponseMessage> GetJsonAsync(this HttpClient httpClient, string url, Dictionary<string, string> properties = null)
+        public static Task<HttpResponseMessage> GetJsonAsync(this HttpClient httpClient, string url, Dictionary<string, string>? properties = null)
         {
             string qryStr = (properties?.Any() ?? false) ? string.Join("&", properties.Select(p => $"{p.Key}={p.Value}")) : string.Empty;
 

@@ -82,7 +82,7 @@ namespace Phronesis.Core.Infra.CrossCutting
                     dt.Columns.Add(firstRowCell.Name);
                 }
 
-                for (int rowNum = 2; rowNum <= _worksheet.Dimension.End.Row; rowNum++)
+                for (int rowNum = 2; rowNum <= _worksheet?.Dimension.End.Row; rowNum++)
                 {
                     var wsRow = _worksheet.Cells[rowNum, 1, rowNum, _worksheet.Dimension.End.Column];
                     DataRow row = dt.Rows.Add();
