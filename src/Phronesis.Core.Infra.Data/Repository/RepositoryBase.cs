@@ -1,5 +1,7 @@
 using System.Linq.Expressions;
+
 using Microsoft.EntityFrameworkCore;
+
 using Phronesis.Core.Domain.Contract.Models;
 using Phronesis.Core.Infra.CrossCutting.TypesExtension;
 using Phronesis.Core.Infra.Data.Contract;
@@ -142,7 +144,7 @@ namespace Phronesis.Core.Infra.Data.Repository
                 consulta = includes.Aggregate(consulta, (current, include) => current.Include(include));
             }
 
-            return consulta.SingleAsync();
+            return consulta.FirstOrDefaultAsync();
         }
 
         /// <summary>
