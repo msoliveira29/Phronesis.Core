@@ -1,6 +1,8 @@
 using System;
 using System.Collections.Generic;
+using System.Globalization;
 using System.Linq;
+using System.Text;
 using System.Threading.Tasks;
 
 namespace Phronesis.Core.Infra.CrossCutting.TypesExtension
@@ -104,6 +106,27 @@ namespace Phronesis.Core.Infra.CrossCutting.TypesExtension
         /// <remarks></remarks>
         public static string OnlyNumbers(this string s) =>
             string.Join(string.Empty, s.Replace(" ", string.Empty).ToCharArray().Where(Char.IsDigit));
+
+        /// <summary>
+        /// Remove acentos do texto
+        /// </summary>
+        /// <param name="s"></param>
+        /// <returns></returns>
+        /// <remarks></remarks>
+        public static string RemoveAcento(this string s)
+        {
+            StringBuilder sbReturn = new StringBuilder();
+
+            var arrayText = s.Normalize(NormalizationForm.FormD).ToCharArray();
+
+            foreach (char letter in arrayText)
+            {
+                if (CharUnicodeInfo.GetUnicodeCategory(letter) != UnicodeCategory.NonSpacingMark)
+                    sbReturn.Append(letter);
+            }
+
+            return sbReturn.ToString();
+        }
 
         #endregion
     }
